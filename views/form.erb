@@ -1,16 +1,6 @@
-<% if @name %>
-<h1>My name is <%=@name%> and my nickname is <%=@nickname%></h1>
-<% end %>
-
 <form action= '/named_cat' method ='post'>
   <input type='text' name='name'> </input>
   <input type='text' name='nickname'> </input>
+  <input type='text' name='color'> </input>
   <input type='submit' value='Submittttt'> </input>
 </form>
-
-
-
-
-<div style='border: 8px dashed <%=@color%>'>
-  <img src='http://bit.ly/1eze8aE'>
-</div>

@@ -12,12 +12,16 @@ get '/pizza' do
   "Dogs"
 end
 
-get '/named_cat' do
+post '/named_cat' do
   p params
   @name = params[:name]
   @nickname = params[:nickname]
   @color = params[:color]
   erb(:index)
+end
+
+get '/name_form' do
+  erb(:form)
 end
 
 get '/random_cat' do
