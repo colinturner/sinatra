@@ -13,6 +13,7 @@ get '/pizza' do
 end
 
 get '/cat' do
+  @random_name = %w(Amigo Oscar Viking).sample
   erb(:index)
 end
 
